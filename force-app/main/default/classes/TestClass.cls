@@ -6,6 +6,5 @@ public with sharing class TestClass {
         System.debug('Test Method1');
         System.debug('Test Method2');
         System.debug('Test Method3');
-        System.debug('Test Method4');
     }
 }
