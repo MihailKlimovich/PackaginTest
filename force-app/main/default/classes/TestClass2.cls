@@ -5,6 +5,5 @@ public with sharing class TestClass2 {
 
     public void ApexMethod() {
         System.debug('Test Method1');
-        System.debug('Test Method2');
     }
 }
