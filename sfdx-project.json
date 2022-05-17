@@ -1,12 +1,20 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "TestUnlockedPackage",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "name": "TestPackaging",
+    "namespace": "SuccNamespace",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "54.0",
+    "packageAliases": {
+        "TestUnlockedPackage": "0Ho8a0000008ON6CAM",
+        "TestUnlockedPackage@0.1.0-1": "04t8a000000h4OfAAI",
+        "TestUnlockedPackage@0.1.0-2": "04t8a000000h4b8AAA"
     }
-  ],
-  "name": "TestPackaging",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "54.0"
 }
