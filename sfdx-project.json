@@ -3,18 +3,32 @@
         {
             "path": "force-app",
             "default": true,
-            "package": "TestUnlockedPackage",
+            "package": "UnlockedPackage",
             "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT"
+            "versionNumber": "0.1.0.NEXT",
+            "dependencies": [
+                {
+                    "package": "ManagedPackage@0.1.0-2"
+                }
+            ]
+        },
+        {
+            "path": "force-app2",
+            "package": "ManagedPackage",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+            
         }
     ],
     "name": "TestPackaging",
-    "namespace": "SuccNamespace",
+    "namespace": "sucPackageTest",
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "54.0",
     "packageAliases": {
-        "TestUnlockedPackage": "0Ho8a0000008ON6CAM",
-        "TestUnlockedPackage@0.1.0-1": "04t8a000000h4OfAAI",
-        "TestUnlockedPackage@0.1.0-2": "04t8a000000h4b8AAA"
+        "UnlockedPackage": "0Ho8a0000008ONLCA2",
+        "ManagedPackage": "0Ho8a0000008ONQCA2",
+        "ManagedPackage@0.1.0-1": "04t8a000001dsk5AAA",
+        "ManagedPackage@0.1.0-2": "04t8a000001dskAAAQ"
     }
 }
