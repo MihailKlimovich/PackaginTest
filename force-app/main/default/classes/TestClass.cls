@@ -1,5 +1,5 @@
-public with sharing class TestClass {
-    public TestClass() {
+global with sharing class TestClass {
+    global TestClass() {
         System.debug('Hello World');
     }
 }

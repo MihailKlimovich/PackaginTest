@@ -1,6 +1,8 @@
-public with sharing class TestManagePackageClass {
+
+global with sharing class TestManagePackageClass {
     
-    public static void testManagedPackageClass() {
+
+    global static void testManagedPackageMethod() {
         System.debug('This test ManagedPackageClass');
     }
 }

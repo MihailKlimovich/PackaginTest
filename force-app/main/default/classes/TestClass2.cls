@@ -1,9 +1,9 @@
-public with sharing class TestClass2 {
-    public TestClass2() {
+global with sharing class TestClass2 {
+    global TestClass2() {
         System.debug('Hello Wortld');
     }
 
-    public static void TestUnlockedPackageMehtod() {
-        TestManagePackageClass.testManagedPackageClass();
+    global static void TestUnlockedPackageMehtod() {
+        TestManagePackageClass.testManagedPackageMethod();
     }
 }
