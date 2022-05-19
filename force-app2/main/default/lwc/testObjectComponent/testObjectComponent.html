@@ -1,3 +1,26 @@
 <template>
+    <lightning-card>
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium slds-m-around_small">
+                Create Testing Objects.
+            </h2>
     
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input 
+                    class="slds-m-bottom_x-small"
+                    type="text" 
+                    label="Enter name"
+                    onchange={handleChange}>
+                </lightning-input>
+                <lightning-button 
+                    variant="brand" 
+                    label="Brand" 
+                    title="Primary action" 
+                    onclick={handleClick} 
+                    class="slds-m-left_x-small">
+                </lightning-button>
+            </div>
+        </div>    
+    </lightning-card>
 </template>

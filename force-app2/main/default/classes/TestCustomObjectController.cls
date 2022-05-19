@@ -1,11 +1,8 @@
 public with sharing class TestCustomObjectController {
-    @AuraEnabled
-    public static string createTestCustomObject(String nameObject){
-        try {
-            insert new TestCustomObject__c(Name = nameObject);
+    @AuraEnabled(cacheable = true)
+    public static String createTestCustomObject(String nameObject){
+            TestCustomObject__c testObject = new TestCustomObject__c(Name = nameObject);
+            insert testObject;
             return 'Success';
-        } catch (Exception e) {
-            return 'Fail';
-        }
     }
 }
