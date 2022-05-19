@@ -2,11 +2,36 @@
     "packageDirectories": [
         {
             "path": "force-app",
-            "default": true
+            "default": true,
+            "package": "ManagedPackage1",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        },
+        {
+            "path": "force-app2",
+            "package": "ManagedPackage2",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false,
+            "dependencies": [
+                {
+                    "package": "ManagedPackage1@0.1.0-2"
+                }
+            ]
         }
     ],
     "name": "TestPackaging",
-    "namespace": "sucPackageTest",
+    "namespace": "sucPackTest",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "54.0"
+    "sourceApiVersion": "54.0",
+    "packageAliases": {
+        "ManagedPackage1": "0Ho8a000000XZFmCAO",
+        "ManagedPackage2": "0Ho8a000000XZFrCAO",
+        "ManagedPackage1@0.1.0-1": "04t8a0000012eF4AAI",
+        "ManagedPackage2@0.1.0-1": "04t8a0000012eNUAAY",
+        "ManagedPackage2@0.1.0-2": "04t8a0000012eNeAAI",
+        "ManagedPackage2@0.1.0-3": "04t8a0000012eNjAAI",
+        "ManagedPackage1@0.1.0-2": "04t8a0000012eNtAAI",
+        "ManagedPackage2@0.1.0-4": "04t8a0000012eO3AAI"
+    }
 }
