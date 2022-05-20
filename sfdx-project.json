@@ -5,7 +5,8 @@
             "default": true,
             "package": "ManagedPackage1",
             "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT"
+            "versionNumber": "1.1.0.0",
+            "ancestorId": "04t8a0000012gL0AAI"
         },
         {
             "path": "force-app2",
@@ -32,6 +33,9 @@
         "ManagedPackage2@0.1.0-2": "04t8a0000012eNeAAI",
         "ManagedPackage2@0.1.0-3": "04t8a0000012eNjAAI",
         "ManagedPackage1@0.1.0-2": "04t8a0000012eNtAAI",
-        "ManagedPackage2@0.1.0-4": "04t8a0000012eO3AAI"
+        "ManagedPackage2@0.1.0-4": "04t8a0000012eO3AAI",
+        "ManagedPackage2@0.1.0-6": "04t8a0000012g8IAAQ",
+        "ManagedPackage2@0.1.0-7": "04t8a0000012g8NAAQ",
+        "ManagedPackage1@1.0.0-0": "04t8a0000012gL0AAI"
     }
 }
