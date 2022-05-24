@@ -5,37 +5,37 @@
             "default": true,
             "package": "ManagedPackage1",
             "versionName": "ver 0.1",
-            "versionNumber": "1.1.0.0",
-            "ancestorId": "04t8a0000012gL0AAI"
+            "versionNumber": "0.1.0.NEXT"
         },
         {
             "path": "force-app2",
             "package": "ManagedPackage2",
             "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
+            "versionNumber": "2.1.0.NEXT",
             "default": false,
+            "ancestorId": "04t8a0000012ohOAAQ",
             "dependencies": [
                 {
-                    "package": "ManagedPackage1@0.1.0-2"
+                    "package": "ManagedPackage1@0.1.0-1"
                 }
             ]
         }
     ],
     "name": "TestPackaging",
-    "namespace": "sucPackTest",
+    "namespace": "sucPackageTest",
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "54.0",
     "packageAliases": {
-        "ManagedPackage1": "0Ho8a000000XZFmCAO",
-        "ManagedPackage2": "0Ho8a000000XZFrCAO",
-        "ManagedPackage1@0.1.0-1": "04t8a0000012eF4AAI",
-        "ManagedPackage2@0.1.0-1": "04t8a0000012eNUAAY",
-        "ManagedPackage2@0.1.0-2": "04t8a0000012eNeAAI",
-        "ManagedPackage2@0.1.0-3": "04t8a0000012eNjAAI",
-        "ManagedPackage1@0.1.0-2": "04t8a0000012eNtAAI",
-        "ManagedPackage2@0.1.0-4": "04t8a0000012eO3AAI",
-        "ManagedPackage2@0.1.0-6": "04t8a0000012g8IAAQ",
-        "ManagedPackage2@0.1.0-7": "04t8a0000012g8NAAQ",
-        "ManagedPackage1@1.0.0-0": "04t8a0000012gL0AAI"
+        "ManagedPackage1": "0Ho8a000000XZGBCA4",
+        "ManagedPackage2": "0Ho8a000000XZGGCA4",
+        "ManagedPackage1@0.1.0-1": "04t8a0000012lQ1AAI",
+        "ManagedPackage2@0.1.0-1": "04t8a0000012lQLAAY",
+        "ManagedPackage2@1.1.0-1": "04t8a0000012lQQAAY",
+        "ManagedPackage2@1.2.0-1": "04t8a0000012lQVAAY",
+        "ManagedPackage2@1.3.0-1": "04t8a0000012lUiAAI",
+        "ManagedPackage2@1.4.0-1": "04t8a0000012ld3AAA",
+        "ManagedPackage2@2.0.0-1": "04t8a0000012odBAAQ",
+        "ManagedPackage2@2.0.0-2": "04t8a0000012ohOAAQ",
+        "ManagedPackage2@2.1.0-2": "04t8a0000012ohYAAQ"
     }
 }

@@ -2,7 +2,7 @@
   "orgName": "Demo company",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
-  "namespace": "sucPackTest",
+  "namespace": "sucPackageTest",
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true

@@ -1,10 +1,14 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import createTestCustomObject from '@salesforce/apex/TestCustomObjectController.createTestCustomObject';
+import searchTestCustomObject from '@salesforce/apex/TestCustomObjectController.searchTestCustomObject';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class TestObjectComponent extends LightningElement {
     nameObject;
     resultInsert;
+    foundObjects;
+    isModalOpen;
+    @track isLoading = false;
 
     handleChange(event) {
         this.nameObject = event.target.value;
@@ -15,9 +19,11 @@ export default class TestObjectComponent extends LightningElement {
         }).then((result) => {
             this.resultInsert = result;
             this.showToast();
+            this.updateRecordView();
         }).catch((error) => {
             this.resultInsert = error;
-            console.log(this.resultInsert);
+        }).finally(()=>{
+            this.handleIsLoading(false);
         });
     }
     showToast() {
@@ -28,5 +34,27 @@ export default class TestObjectComponent extends LightningElement {
             mode: 'dismissable'
         });
         this.dispatchEvent(event);
+    }
+    handleSearch() {
+        searchTestCustomObject({
+            searchName : this.nameObject
+        }).then((result) => {
+            this.foundObjects = result;
+            this.isModalOpen = true;
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+
+    closeModal() {
+        this.isModalOpen = false;
+    }
+
+    updateRecordView() {
+        eval("$A.get('e.force:refreshView').fire();");
+    }
+    
+    handleIsLoading(isLoading) {
+        this.isLoading = isLoading;
     }
 }
